@@ -1,0 +1,8 @@
+
+.DS_Store
+
+# ignore the public build directory
+public/
+
+
+.hugo_build.lock

@@ -1,0 +1,23 @@
+
+{{ define "main" }}
+
+  {{ .Content }}
+
+  <p>Site Sections and Pages (this line from layouts/page/site-menu.html)</p> 
+
+  <!-- PRINT ALL SECTIONS AND LINKS -->
+  {{ range .Site.Sections }}
+    <h2>{{ .LinkTitle }}</h2>
+
+    {{ range .Pages }}
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+
+      {{ range .Page.Pages }}
+        <p><a href="{{ .Permalink }}">{{ .Title }}</p>
+      {{ end }}
+
+    {{ end }}
+
+  {{ end }}
+
+{{ end }}
