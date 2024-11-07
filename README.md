@@ -1,7 +1,7 @@
 
-# Hugo Template Base
+# Hugo Theme Base
 
-This repo is a starting point for building a Hugo template.
+This repo is a starting point for building a Hugo theme.
 
 There is content in the following directories:
 - content (demo content for the structure)
