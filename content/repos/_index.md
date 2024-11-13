@@ -1,7 +1,4 @@
 
 ---
-title: "Repository Documentation"
+title: "Repository Documentation ( This line is from `content/repos/_index.md` )"
 ---
-
-Repository Documentation ( This line is from `content/repos/_index.md` )
-

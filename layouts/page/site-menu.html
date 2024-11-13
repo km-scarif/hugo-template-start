@@ -7,17 +7,43 @@
 
   <!-- PRINT ALL SECTIONS AND LINKS -->
   {{ range .Site.Sections }}
-    <h2>{{ .LinkTitle }}</h2>
-
+    <!-- These are the directory names under site/content -->
+    <h2>[.Site.Section] - {{ .LinkTitle }}</h2>
+    <p><b>{{ if ne .BundleType "branch" }} <a href="{{ .Permalink }}">{{ .Title }} </a> {{ else }} {{ .Title }}:{{ end }} </b>
+            {{ if eq .BundleType "branch" }} [Branch] {{ end }}  
+            [Page Kind: {{ .Kind }}]   
+            [Current Section: {{.CurrentSection}}]</p>
+    <ul>
     {{ range .Pages }}
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <li>
+      <!-- These are the _index.md file links from the Section subdirs...  Ex: content/docs/dirname/_index.md -->
+      <h3><a href="{{ .Permalink }}">[.Site.Section.Pages] - {{ .Title }}</a></h3>
+        <ul>
+          <!-- These are the Pages for each section - Ex: content/docs/dir/file or /content/docs/dir/subdir -->
+          {{ range .Page.Pages }}
+          <li>
+          <p>
+            <b>{{ if ne .BundleType "branch" }} <a href="{{ .Permalink }}">{{ .Title }} </a> {{ else }} {{ .Title }}:{{ end }} </b>
+            {{ if eq .BundleType "branch" }} [Branch] {{ end }}  
+            [Page Kind: {{ .Kind }}]   
+            [Current Section: {{.CurrentSection}}]</p>
+            
+            <!-- Finally, get the .RegularPages in the branches and show the links... -->
+              <ul>
+              {{ range .RegularPagesRecursive }}
+                <li>
+                  <p><a href="{{ .Permalink }}">{{ .Title }}</a> </p>
+                </li>
 
-      {{ range .Page.Pages }}
-        <p><a href="{{ .Permalink }}">{{ .Title }}</p>
-      {{ end }}
-
+              {{ end }}
+              </ul> 
+            
+          </li>
+          {{ end }}
+        </ul>
+      </li>
     {{ end }}
-
+    </ul>
   {{ end }}
 
 {{ end }}
