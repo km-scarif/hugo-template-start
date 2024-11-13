@@ -1,5 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://localhost:1313/'
 languageCode = 'en-us'
-title = 'Hugo Site'
+title = 'Hugo Theme Base Site'
 
 disableKinds = ['taxonomy', 'term']
+
+
