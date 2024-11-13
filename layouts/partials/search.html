@@ -1,6 +1,8 @@
 <form>
   <div class="search-wrapper">
     <input type="search" id="search-input">
+    <button type="button" onclick="document.getElementById('results').innerHTML = JSON.stringify(SearchIndex.search(document.getElementById('search-input').value))">Search</button>
     <div id="search-results"></div>
   </div>
+  <div id="results"></div>
 </form>
