@@ -49,6 +49,8 @@ title: "what will appear in the menu"
 date:  2024-10-05
 ---
 ```
-
 - Additional frontmatter can be included in the files as well
+- If a repository has image files that are referenced in the markdown files, the markdown file name must be `index.md`
+for Hugo to correctly reference the relative image links.
+
 
