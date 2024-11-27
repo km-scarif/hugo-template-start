@@ -1,0 +1,45 @@
+body {
+    font-family: "JetBrains Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+body h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+body h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+body input {
+    border: 1px solid #ddd;
+    border-radius: .25rem;
+    padding: .125rem .5rem;
+    width: 100%;
+}
+body input:focus {
+    outline-offset: 0px;
+    outline: 2px solid #3b82f6;
+}
+body button {
+    border: 1px solid red;
+    padding: .125rem .5rem;
+    border: 1px solid #ddd;
+    border-radius: .25rem;
+    background: #fff;
+}
+body button:focus {
+    outline-offset: 0px;
+    outline: 2px solid #3b82f6;
+}
+
+.main-block a:hover {
+    text-decoration: underline;
+    color: #3b82f6;
+}

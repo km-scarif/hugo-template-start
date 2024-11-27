@@ -1,13 +1,14 @@
+{{ define "main" }}
 
+    {{ range .Site.AllPages.ByTitle }}
 
-{{ range .Site.AllPages.ByTitle }}
+        <!-- Only the actual pages... -->
+        {{ if ne .BundleType "branch" }} 
 
-<!-- Only the actual pages... -->
-{{ if ne .BundleType "branch" }} 
+            <p><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>  -  [Permalink: {{ .RelPermalink }}]</p>
 
-<p><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>  -  [Permalink: {{ .RelPermalink }}]</p>
+        {{ end }}
 
-{{ end }}
+    {{ end }}
 
-{{ end }}
-
+{{ end}}

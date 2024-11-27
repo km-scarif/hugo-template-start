@@ -1,7 +1,11 @@
 <form>
-  <div class="search-wrapper">
-    <input type="search" id="search-input">
-    <button type="button" onclick="document.getElementById('results').innerHTML = JSON.stringify(SearchIndex.search(document.getElementById('search-input').value))">Search</button>
+  <div class="search-wrapper mb-3">
+    <div class="flex gap-1">
+      <div class="flex-1"><input type="search" id="search-input"></div>
+      <button type="button" onclick="document.getElementById('results').innerHTML = JSON.stringify(SearchIndex.search(document.getElementById('search-input').value))">
+        <i class="far fa-search"></i>
+      </button>
+    </div>
     <div id="search-results"></div>
   </div>
   <div id="results"></div>
