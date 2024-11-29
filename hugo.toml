@@ -2,6 +2,5 @@ baseURL = 'https://localhost:1313/'
 languageCode = 'en-us'
 title = 'Hugo Theme Base Site'
 
-disableKinds = ['taxonomy', 'term']
 
 

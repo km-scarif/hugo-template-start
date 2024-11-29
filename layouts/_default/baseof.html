@@ -3,7 +3,7 @@
   {{ partial "head.html" }}
 <body class="flex flex-col h-screen">
   <div class="flex bg-slate-800 px-4 py-2 ">
-    <div class="flex-1 text-white">[TITLE HERE]</div>
+            <div class="flex-1 text-white">{{ .Site.Title }}</div>
     <div class="flex items-center justify-end">
       {{ partial "header-nav.html" }}
       {{ partial "search.html" }}

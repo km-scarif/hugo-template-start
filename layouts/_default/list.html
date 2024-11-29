@@ -1,5 +1,15 @@
 
 {{ define "main" }}
-  (this line from layouts/_default/list.html)
-  {{ .Content }}
+    {{ partial "breadcrumb.html" . }}
+    <div class="single">
+        <h1 class="title">{{ .Title }}</h1>
+    </div>
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <div class="listing">
+        <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <a class="summary" href="{{ .RelPermalink }}">
+            <p>{{ .Summary }}</p>
+        </a>
+    </div>
+    {{ end }}
 {{ end }}

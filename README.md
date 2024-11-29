@@ -10,6 +10,17 @@ There is content in the following directories:
 The other directories are empty, since they are not necessary for the 
 base of a simple hugo template.
 
+## Necessary files for content directory
+- `content` directory needs an _index.md file
+    - This file may be empty, but is used by Hugo to build and layout
+- `content` directory also needs a <name>.md file for system-wide single pages.  i.e. /about 
+requires an `about.md` file in the root of the content directory
+- All subdirectories that resolve to a route (/repos -> content/repos) need an _index.md file in the 
+root of the directory
+    - The title of this _index.md file will be used in the page if it exists
+- All subdirectories in either kind of repository need an `_index.md` to exist, and if the `title: xyz` 
+attribute is set, that is what will be used in the navigation menus
+
 ## Necessary files for pulled repositories
 
 For repos to be pulled and integrated into the Hugo build process, there need to 

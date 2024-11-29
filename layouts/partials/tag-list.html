@@ -1,0 +1,41 @@
+
+{{/*  DETERMINE MAX COUNT  */}}
+{{ $maxCount := 0 }}
+{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+{{ $cnt := .Count }}
+{{ if gt $cnt $maxCount }}
+{{ $maxCount = $cnt }}
+{{ end }}
+{{ end }}
+
+{{/*  COLORS  */}}
+{{ $red   := 233 }}
+{{ $green := 197 }}
+{{ $blue  := 252 }}
+
+{{/*  BUILD INDEX BY FIRST CHAR  */}}
+{{ $lastLetter := "" }}
+{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+{{ $cnt := .Count }}
+{{ $letter := substr $name 0 1 }}
+
+{{ if ne $lastLetter $letter }}
+{{ if ne $lastLetter "" }}</ul>{{ end }}
+<h3 class="tag-letter">{{ upper $letter }}</h3>
+<ul class="tags">
+    {{ end }}
+
+    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+    {{ $strength := mul 90 (div (float (sub $cnt 1)) $maxCount) }}
+    <li class="tag" style="background-color: rgb({{ sub $red $strength }}, {{ sub $green $strength }}, {{ sub $blue $strength }})">
+        <a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">{{$name}}</a>
+        <sup>{{$cnt}}</sup>
+    </li>
+    {{ end }}
+
+    {{ $lastLetter = $letter }}
+    {{ if gt $cnt $maxCount }}
+    {{ $maxCount = $cnt }}
+    {{ end }}
+    {{ end }}
+</ul>

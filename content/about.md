@@ -3,5 +3,6 @@ title: About
 layout: page
 type:  page
 ---
+(content/about.md)
 
-About page for site... (line from content/about.md)
+About page for site... 

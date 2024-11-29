@@ -1,5 +1,14 @@
 {{- $.Scratch.Add "index" slice -}}
+
 {{- range .Site.Pages -}}
-{{- $.Scratch.Add "index" (dict "title" .Title "uri" .Permalink "tags" .Params.tags "content" .Plain "section" (.Section | title)) -}}
+
+    {{- $.Scratch.Add "index" (dict 
+        "title" .Title 
+        "uri" .Permalink 
+        "tags" .Params.tags
+        "content" .Plain 
+        "section" (.Section | title)) 
+        -}}
 {{- end -}}
+
 {{- $.Scratch.Get "index" | jsonify (dict "indent" "  ") -}}

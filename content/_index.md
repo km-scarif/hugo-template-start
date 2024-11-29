@@ -1,7 +1,5 @@
 ---
-title: "Home Page"
+title: "Home"
 ---
 
-Homepage for Dev Docs(This line is from `content/_index.md`)
-
-
+(`content/_index.md`)
