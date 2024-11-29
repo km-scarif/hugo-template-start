@@ -80,4 +80,4 @@ FROM (
 
 ## Output
 
-![Discontinued Top 5 Stores](discontinued-top5-stores.png)
+![Discontinued Top 5 Stores](/discontinued-top5-stores.png)
