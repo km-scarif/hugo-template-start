@@ -1,0 +1,103 @@
+/* This file fixes the editor preview stylings that are reset by tailwind css */
+.markdown-preview {
+    h1, h2, h3, h4, h5, h6 {
+        display: block;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+    }
+    h3 {
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+    h4 {
+        margin-block-start: 1.33em;
+        margin-block-end: 1.33em;
+    }
+    h5 {
+        font-size: 0.83em;
+        margin-block-start: 1.67em;
+        margin-block-end: 1.67em;
+    }
+    h6 {
+        font-size: 0.67em;
+        margin-block-start: 2.33em;
+        margin-block-end: 2.33em;
+    }
+
+    p {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+
+    blockquote {
+        display: block;
+        padding-block-start: .5em;
+        padding-block-end: .5em;
+        padding-inline-start: 40px;
+        padding-inline-end: 40px;
+        border-left: 4px solid #dddddd;
+    }
+
+    ul, ol {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        unicode-bidi: isolate;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+    ol {
+        list-style-type: decimal;
+    }
+
+    a {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    code {
+        background: #e2e8f0;
+        padding: 0 .5rem;
+        border-radius: .25rem;
+    }
+
+    img {
+        display: inline-block;
+        font-weight: 400;
+        font-size: .95rem;
+        text-align: center;
+        line-height: 1;
+   
+        min-width: 100px;
+        min-height: 50px;
+        position: relative;
+    }
+    img::after {
+        content: 'MISSING IMAGE';
+        display: flex;
+        margin-top: 5px;
+        font-weight: bold;
+        font-style: italic;
+        z-index: 2;
+        color: #9f1239;
+   }
+}
