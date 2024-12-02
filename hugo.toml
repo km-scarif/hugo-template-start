@@ -2,5 +2,9 @@ baseURL = 'https://localhost:1313/'
 languageCode = 'en-us'
 title = 'KMDocs Hugo Theme'
 
+[markup]
+    [markup.highlight]
+        style = 'catppuccin-mocha'
+#style = 'nord'
 
 

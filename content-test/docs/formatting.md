@@ -2,8 +2,7 @@
 title:  Formatting Test
 ---
 
-
-Headings
+### Headings
 
 # Heading 1
 
@@ -14,6 +13,8 @@ Headings
 #### Heading 4
 
 ##### Heading 5
+
+### Text Formatting
 
 Bold Text
 **This is bold**
@@ -28,7 +29,7 @@ Blockquote
 > This is the last line
 
 
-Lists
+### Lists
 
 Unordered List
 
@@ -42,14 +43,21 @@ Unordered List
 Ordered List
 
 1. Item 1
-1. Item 2
-1. Item 3
-    2. SubItem 1
+2. Item 2
+3. Item 3
+    1. SubItem 1
     2. SubItem 2
-        3. SubItem 1
-        3. SubItem 2
+        1. SubItem 1
+        2. SubItem 2
 
-Code Block
+### Inline Code
+
+This is an inline code `/directory/subdirectory`
+
+This is the command to run: `apt install htop`
+
+
+### Code Blocks
 
 CODE
 ```code
@@ -82,11 +90,12 @@ SQL
 SELECT * from table;
 ```
 
-Link
+### Links
 
 [Google](http://www.google.com)
 
-Image
+### Images
+
 ![imagename](/image2.png)
 
 
