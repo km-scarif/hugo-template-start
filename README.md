@@ -10,6 +10,10 @@ There is content in the following directories:
 The other directories are empty, since they are not necessary for the 
 base of a simple hugo template.
 
+**NOTE:**
+Two content directories are in the repo for testing.  Either copy or symlink one of them to `content` and 
+the current theme can be tested
+
 ## Necessary files for content directory
 - `content` directory needs an _index.md file
     - This file may be empty, but is used by Hugo to build and layout

@@ -4,5 +4,7 @@
 # ignore the public build directory
 public/
 
+# ignore the content symlink/directory
+content
 
 .hugo_build.lock
