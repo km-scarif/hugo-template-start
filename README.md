@@ -1,4 +1,5 @@
 
+
 # Hugo Theme Base
 
 This repo is a starting point for building a Hugo theme.
