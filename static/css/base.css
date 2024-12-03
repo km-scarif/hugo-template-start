@@ -43,3 +43,9 @@ body button:focus {
     text-decoration: underline;
     color: #3b82f6;
 }
+
+.search-results-wrapper strong {
+    background-color: #ffdd0088;
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
