@@ -15,6 +15,10 @@ base of a simple hugo template.
 Two content directories are in the repo for testing.  Either copy or symlink one of them to `content` and 
 the current theme can be tested
 
+The files in content-root will be copied via the scripts to the hugo build directory in the container 
+in the `HUGO_BUILD_DIR/content` folder.  These files should be the same as the files that are tested in the 
+content-real/content-test directories root.  
+
 ## Necessary files for content directory
 - `content` directory needs an _index.md file
     - This file may be empty, but is used by Hugo to build and layout
@@ -25,6 +29,7 @@ root of the directory
     - The title of this _index.md file will be used in the page if it exists
 - All subdirectories in either kind of repository need an `_index.md` to exist, and if the `title: xyz` 
 attribute is set, that is what will be used in the navigation menus
+
 
 ## Necessary files for pulled repositories
 
