@@ -3,7 +3,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-    {{ print "x" .Site.Title " | " .Title }}
+        {{ if .IsHome }}
+        {{ else }}
+            {{ if page.Title }}
+                {{ page.Title }} | 
+            {{ end }}
+        {{ end }}
+        {{ site.Title }}
     </title>
     
     <!-- Links to external styles or assets here -->
