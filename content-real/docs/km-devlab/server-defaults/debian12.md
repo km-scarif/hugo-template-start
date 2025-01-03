@@ -1,7 +1,9 @@
 ---
 title:  "Debian 12 server files"
 date:   2024-11-01
-tags:   server
+tags:   
+    - server
+    - debian
 ---
 
 # Server files for Debian 12 base installation

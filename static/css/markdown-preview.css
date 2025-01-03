@@ -8,38 +8,38 @@
     }
 
     h1 {
-        font-size: 2em;
-        margin-block-start: 0.67em;
-        margin-block-end: 0.67em;
+        font-size: 1.75em;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
     }
     h2 {
-        font-size: 1.75em;
-        margin-block-start: 0.83em;
-        margin-block-end: 0.83em;
+        font-size: 1.5em;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
     }
     h3 {
-        font-size: 1.5em;
-        margin-block-start: 0.8em;
-        margin-block-end: 0.8em;
+        font-size: 1.25em;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
     }
     h4 {
-        font-size: 1.25em;
-        margin-block-start: 1.25em;
-        margin-block-end: 1.33em;
+        font-size: 1.1em;
+        margin-block-start: 5em;
+        margin-block-end: 5em;
     }
     h5 {
-        font-size: 1.10em;
-        margin-block-start: 1.67em;
-        margin-block-end: 1.67em;
+        font-size: 1em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
     }
     h6 {
-        font-size: 1.00em;
+        font-size: 1em;
         margin-block-start: 2.33em;
         margin-block-end: 2.33em;
     }
 
     p {
-        font-size: 0.8em;
+        font-size: 1em;
         margin-block-start: .5em;
         margin-block-end: .5em;
     }
@@ -48,19 +48,15 @@
         display: block;
         padding-block-start: .5em;
         padding-block-end: .5em;
-        padding-inline-start: 40px;
-        padding-inline-end: 40px;
+        padding-inline-start: 30px;
+        padding-inline-end: 30px;
         border-left: 4px solid #dddddd;
     }
 
     ul, ol {
-        font-size: 0.8em;
+        font-size: .9em;
         display: block;
-        margin-block-start: 0.8em;
-        margin-block-end: 0.8em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 40px;
+        padding-inline-start: 30px;
         unicode-bidi: isolate;
     }
 
@@ -78,14 +74,14 @@
     }
 
     code {
-        font-size: 0.9em;
+        font-size: .9em;
         background: #e2e8f0;
         padding: 0.25rem;
         border-radius: .25rem;
     }
     
     pre {
-        font-size: 0.9em;
+        font-size: .9em;
         background: #e2e8f0;
         padding: 0.25rem;
         border-radius: .25rem;
