@@ -5,6 +5,8 @@
         margin-inline-start: 0rem;
         margin-inline-end: 0rem;
         font-weight: bold;
+        width: fit-content;
+        padding: 0 1rem;
     }
 
     h1 {
@@ -60,7 +62,7 @@
     ul, ol {
         font-size: .9rem;
         display: block;
-        padding-inline-start: 2em;
+        padding-inline-start: 2rem;
         unicode-bidi: isolate;
     }
 
