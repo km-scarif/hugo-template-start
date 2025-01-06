@@ -2,61 +2,65 @@
 .markdown-preview {
     h1, h2, h3, h4, h5, h6 {
         display: block;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
+        margin-inline-start: 0rem;
+        margin-inline-end: 0rem;
         font-weight: bold;
     }
 
     h1 {
-        font-size: 1.75em;
-        margin-block-start: 0.5em;
-        margin-block-end: 0.5em;
+        font-size: 1.5rem;
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+        background-color: #fdba74;
     }
     h2 {
-        font-size: 1.5em;
-        margin-block-start: 0.5em;
-        margin-block-end: 0.5em;
+        font-size: 1.3rem;
+        margin-block-start: .75rem;
+        margin-block-end: .75rem;
+        background-color: #fed7aa;
     }
     h3 {
-        font-size: 1.25em;
-        margin-block-start: 0.5em;
-        margin-block-end: 0.5em;
+        font-size: 1.15rem;
+        margin-block-start: .75rem;
+        margin-block-end: .75rem;
+        background-color: #ffedd5;
     }
     h4 {
-        font-size: 1.1em;
-        margin-block-start: 5em;
-        margin-block-end: 5em;
+        font-size: 1.1rem;
+        margin-block-start: .75rem;
+        margin-block-end: .75rem;
+        background-color: #fff7ed;
     }
     h5 {
-        font-size: 1em;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
+        font-size: 1rem;
+        margin-block-start: .75rem;
+        margin-block-end: .75rem;
     }
     h6 {
-        font-size: 1em;
-        margin-block-start: 2.33em;
-        margin-block-end: 2.33em;
+        font-size: 1rem;
+        margin-block-start: .75rem;
+        margin-block-end: .75rem;
     }
 
     p {
-        font-size: 1em;
-        margin-block-start: .5em;
-        margin-block-end: .5em;
+        font-size: .9rem;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
     }
 
     blockquote {
         display: block;
         padding-block-start: .5em;
         padding-block-end: .5em;
-        padding-inline-start: 30px;
-        padding-inline-end: 30px;
+        padding-inline-start: 1em;
+        padding-inline-end: 1em;
         border-left: 4px solid #dddddd;
     }
 
     ul, ol {
-        font-size: .9em;
+        font-size: .9rem;
         display: block;
-        padding-inline-start: 30px;
+        padding-inline-start: 2em;
         unicode-bidi: isolate;
     }
 
@@ -73,24 +77,30 @@
         text-decoration: underline;
     }
 
+    /* used for ``` code blocks */
     code {
-        font-size: .9em;
+        font-size: .8rem;
         background: #e2e8f0;
         padding: 0.25rem;
+        border-radius: .25rem;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
         border-radius: .25rem;
     }
-    
+
+    /* used for ` code blocks */
     pre {
-        font-size: .9em;
+        font-size: .8rem;
         background: #e2e8f0;
-        padding: 0.25rem;
+        padding: 1rem;
         border-radius: .25rem;
+        margin-left: 1em;
     }
 
     img {
         display: inline-block;
         font-weight: 400;
-        font-size: 0.8em;
+        font-size: 0.9rem;
         text-align: center;
         line-height: 1;
    
